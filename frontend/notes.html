@@ -1,5 +1,27 @@
-<html>
-    <body>
-        <h1>NOTES</h1>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Notes</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h2>Welcome to QuickNotes Pro</h2>
+
+  <div id="notesSection">
+    <form id="noteForm">
+      <input type="text" id="title" placeholder="Title" required />
+      <textarea id="content" placeholder="Note content..." required></textarea>
+      <button type="submit">Add Note</button>
+    </form>
+
+    <p id="formMsg"></p>
+
+    <div id="notesContainer"></div>
+  </div>
+
+  <button id="logoutBtn">Logout</button>
+
+  <script src="js/notes.js"></script>
+</body>
 </html>
