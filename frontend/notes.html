@@ -2,26 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>My Notes</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Notes | QuickNotes Pro</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <h2>Welcome to QuickNotes Pro</h2>
-
-  <div id="notesSection">
+  <div class="container">
+    <h2 style="text-align: center;">QuickNotes Pro</h2>
+    
     <form id="noteForm">
-      <input type="text" id="title" placeholder="Title" required />
-      <textarea id="content" placeholder="Note content..." required></textarea>
+      <input type="text" id="title" placeholder="Note Title" required />
+      <textarea id="content" placeholder="Note Content" rows="4" required></textarea>
       <button type="submit">Add Note</button>
     </form>
 
+    <!-- ✅ Changed ID to match JS -->
     <p id="formMsg"></p>
 
+    <hr style="margin: 2rem 0;" />
+
+    <!-- ✅ Changed ID to match JS -->
     <div id="notesContainer"></div>
+
+    <button id="logoutBtn" style="margin-top: 2rem; background-color: gray;">Logout</button>
   </div>
 
-  <button id="logoutBtn">Logout</button>
-
-  <script src="js/notes.js"></script>
+  <script src="./js/notes.js"></script>
 </body>
 </html>
